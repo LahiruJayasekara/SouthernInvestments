@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity
 
             fragmentManager.beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
         } else if (id == R.id.nav_slideshow) {
+            Fragment fragment = new CustomerListFragment();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            fragmentManager.beginTransaction().replace(R.id.fragmentContainer,fragment).commit();
 
         } else if (id == R.id.nav_manage) {
 
